@@ -1,0 +1,34 @@
+{
+    "lang": "en",
+    "author": "Zhanarys",
+    "navLinks": [
+        {
+            "name": "home",
+            "isSelected": true
+        },
+        {
+            "name": "works",
+            "isSelected": false
+        },
+        {
+            "name": "about-me",
+            "isSelected": false
+        },
+        {
+            "name": "contacts",
+            "isSelected": false
+        }
+    ],
+    "intro": {
+        "intro-title": {
+            "author": "Zhanarys",
+            "text": "is a",
+            "first-profession": "web-designer",
+            "and": "and",
+            "second-profession": "fullstack-developer"
+        },
+        "intro-description": "He crafts responsive websites where technologies meet creativity",
+        "contact-me": "Contact me!!",
+        "current-work": "Currently working on Politechnical College"
+    }
+}

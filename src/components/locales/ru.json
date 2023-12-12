@@ -1,0 +1,34 @@
+{
+    "lang": "ru",
+    "author": "Жанарыс",
+    "navLinks": [
+        {
+            "name": "главная",
+            "isSelected": true
+        },
+        {
+            "name": "проекты",
+            "isSelected": false
+        },
+        {
+            "name": "обо-мне",
+            "isSelected": false
+        },
+        {
+            "name": "контакты",
+            "isSelected": false
+        }
+    ],
+    "intro": {
+        "intro-title": {
+            "author": "Жанарыс",
+            "text": "",
+            "first-profession": "web-дизайнер",
+            "and": "и",
+            "second-profession": "fullstack-разработчик"
+        },
+        "intro-description": "Разрабатываю адаптивные вебсайты где технологии встречают креативность",
+        "contact-me": "Связаться со мной!!",
+        "current-work": "Сейчас работаю на Политехнический колледж"
+    }
+}

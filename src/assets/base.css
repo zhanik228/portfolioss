@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  background-color: #282C33;
+  color: #fff;
+  font-family: 'Fira Code', monospace;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.containerr {
+  max-width: none;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .containerr {
+    max-width: 1072px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }   
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
