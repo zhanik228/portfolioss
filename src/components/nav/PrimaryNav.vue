@@ -4,7 +4,7 @@
             <li v-for="link in items" v-bind:key="link.name">
                 <a
                     data-prefix="#"
-                    :href="'#' + link.name"
+                    :href="'#' + link.id"
                     :class="
                             link.isSelected ?
                             'active'
@@ -20,19 +20,20 @@
         <span class="bar"></span>
         <span class="bar"></span>
     </button>
-    <div :class="`${isNavOpen ? 'left-0 ' : 'left-[-150%] '} z-50 lg:hidden bg-[#282C33] w-full transition-all absolute top-[48px] bottom-0 end-0 start-0 flex flex-col justify-center items-center p-4 gap-2`">
+    <div :style="`${isNavOpen === true ? 'left:0 ' : 'left: -100% '}`" :class="`z-50 bg-[#282C33] w-full transition-all fixed top-[48px] bottom-0 end-0 start-0 flex flex-col justify-center items-center p-4 gap-2`">
         <div class=" flex flex-col flex-grow items-center justify-center">
         <nav class="">
             <ul class="flex flex-col gap-20">
                 <li v-for="link in items" v-bind:key="link.name">
                     <a
                         data-prefix="#"
-                        :href="'#' + link.name"
+                        :href="'#' + link.id"
                         :class="`
                                 ${link.isSelected ?
                                 'active '
                                 : ''}
-                                text-5xl
+                                text-3xl
+                                sm:text-5xl
                         `"
                     >
                         {{ link.name }}
@@ -96,6 +97,9 @@ export default {
             console.log(this.isNavOpen)
         }
     },
+    mounted() {
+        this.isNavOpen = false
+    }
 }
 </script>
 

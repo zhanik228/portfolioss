@@ -1,5 +1,5 @@
 <template>
-    <section class="flex flex-col sm:flex-row justify-between items-center gap-4">
+    <section class="containerr mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
         <div class="flex flex-col items-start gap-2 max-w-[537px] my-2">
             <h2 class="text-2xl">{{ $t('intro.intro-title.author') }}
             {{  $t('intro.intro-title.text') }}
@@ -30,17 +30,24 @@
             <p class="flex items-center gap-2 p-2 border">
                 <span 
                     class="block bg-[#C778DD] w-4 h-4"
-                ></span>{{ $t('intro.current-work') }}
+                ></span>
+                <span class="text-[#ABB2BF]">
+                    {{ $t('intro.current-work-prefix') }}
+                </span>
+                <span>
+                    {{ $t('intro.current-work') }}
+                </span>
             </p>
         </div>
     </section>
-    <section class="my-20 flex justify-center">
-        <div class="flex flex-col items-end">
-            <p class="relative border p-8 block text-4xl">
-                <span class="quota"></span>
-                With great power comes great electricity bill
+    <section class="my-20 flex justify-center quota-section">
+        <div class="containerr w-[80%] flex flex-col items-end">
+            <p class="mx-auto relative border p-8 block text-2xl">
+                <img src="../assets/quota.png" alt="quota" class="absolute top-[-20px]">
+                <img src="../assets/quota.png" alt="quota" class="absolute bottom-[-20px] right-5">
+                {{ $t('intro.quota') }}
+                <span class="absolute top-full right-[-1px] border border-t-0 p-4 block">{{  $t('intro.quota-author') }}</span>
             </p>
-            <p class="border border-t-0 p-4 block">Doctor Who</p>
         </div>
     </section>
 </template>
@@ -85,5 +92,26 @@ export default {
     background-color: gray;
     transform: rotate(30deg);
     border-left: none;
+}
+
+.quota-section {
+    position: relative;
+}
+
+.quota-section::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    right: 0;
+    border: 1px solid white;
+    border-right: 0;
+    width: 80px;
+    height: 100px;
+}
+
+@media screen and (max-width: 925px) {
+    .quota-section::after {
+        display: none;
+    }
 }
 </style>

@@ -4,19 +4,23 @@
     "navLinks": [
         {
             "name": "home",
-            "isSelected": true
+            "isSelected": true,
+            "id": "home"
         },
         {
             "name": "works",
-            "isSelected": false
+            "isSelected": false,
+            "id": "works"
         },
         {
             "name": "about-me",
-            "isSelected": false
+            "isSelected": false,
+            "id": "about-me"
         },
         {
             "name": "contacts",
-            "isSelected": false
+            "isSelected": false,
+            "id": "contacts"
         }
     ],
     "intro": {
@@ -29,6 +33,9 @@
         },
         "intro-description": "He crafts responsive websites where technologies meet creativity",
         "contact-me": "Contact me!!",
-        "current-work": "Currently working on Politechnical College"
+        "current-work": "Politechnical College",
+        "current-work-prefix": "Currently working on",
+        "quota": "With great power comes great electricity bill",
+        "quota-author": "Doctor Who"
     }
 }

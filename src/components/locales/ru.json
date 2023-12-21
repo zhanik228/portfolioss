@@ -4,19 +4,23 @@
     "navLinks": [
         {
             "name": "главная",
-            "isSelected": true
+            "isSelected": true,
+            "id": "home"
         },
         {
             "name": "проекты",
-            "isSelected": false
+            "isSelected": false,
+            "id": "works"
         },
         {
             "name": "обо-мне",
-            "isSelected": false
+            "isSelected": false,
+            "id": "about-me"
         },
         {
             "name": "контакты",
-            "isSelected": false
+            "isSelected": false,
+            "id": "contacts"
         }
     ],
     "intro": {
@@ -29,6 +33,9 @@
         },
         "intro-description": "Разрабатываю адаптивные вебсайты где технологии встречают креативность",
         "contact-me": "Связаться со мной!!",
-        "current-work": "Сейчас работаю на Политехнический колледж"
+        "current-work": "Политехнический колледж",
+        "current-work-prefix": "Сейчас работаю на",
+        "quota": "с большой силой приходит и большой счет за электричество",
+        "quota-author": "Доктор Кто"
     }
 }
