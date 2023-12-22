@@ -37,5 +37,9 @@
         "current-work-prefix": "Currently working on",
         "quota": "With great power comes great electricity bill",
         "quota-author": "Doctor Who"
+    },
+    "project-section": {
+        "title": "projects",
+        "see-more": "View all"
     }
 }

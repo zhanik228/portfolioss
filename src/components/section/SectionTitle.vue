@@ -1,7 +1,7 @@
 <template>
     <div class="flex items-center gap-4">
         <p class="text-3xl"><span class="text-[#C778DD]">#</span>{{ title }}</p>
-        <span class="title-dec"></span>
+        <span v-if="decoration" class="title-dec"></span>
     </div>
 </template>
 
@@ -10,6 +10,9 @@ export default {
     props: {
         title: {
             required: true,
+        },
+        decoration: {
+            required: false,
         }
     }
 }
